@@ -38,6 +38,23 @@ body, html {
   width: 80px;
   padding: 5px;
 }
+
+.social-icons:hover {
+  cursor: pointer;
+  filter: invert(10%);
+  zoom: 110%;
+}
+
+.profile-links {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.profile-links:hover {
+  text-decoration: underline;
+}
+
 </style>
 </head>
 <body>
@@ -45,7 +62,9 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide" style="justify-content: center;"><img src="./Images/sleepydogdevlogo.jpeg" style="width: 30px; height: 30px; border-radius: 20px; margin: auto;"> SLEEPY DOG STUDIOS</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="justify-content: center; display: flex; align-items: center;">
+      <img src="./Images/sleepydogdevlogo.jpeg" style="width: 30px; height: 30px; border-radius: 20px; margin-right: 10px;">SLEEPY DOG STUDIOS
+    </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
@@ -85,7 +104,7 @@ body, html {
     <a href="https://store.steampowered.com/developer/SleepyDogStudios" target="_blank" style="text-decoration: none;">
       <i class="fa fa-steam w3-hover-opacity"></i>
     </a>
-    <a href="https://store.steampowered.com/developer/SleepyDogStudios" target="_blank" style="text-decoration: none;">
+    <a href="https://discord.com/invite/GUqhjBPVJ2" target="_blank" style="text-decoration: none;">
       <i class="fa fab fa-discord w3-hover-opacity"></i>
     </a>
     <a href="https://www.youtube.com/@expodev" target="_blank" style="text-decoration: none;">
@@ -138,29 +157,32 @@ body, html {
 
 <!-- Promo Section - "We are all over the place" -->
 <div class="w3-container w3-light-grey" style="padding:10px 16px; border: 5px black;">
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style="display: flex; justify-content: center; align-items: center;">
     <div class="w3-col m6" style="text-align: center; vertical-align: middle;">
       <h3>We are all over the place!</h3>
-      <p>Visit any of our social links below!</p>
-      <div style="display: flex;">
+      <p>Visit any of our social links below:</p>
+      <div style="display: flex; justify-content: center; align-items: center; vertical-align: middle;">
         <a href="https://twitter.com/SleepyDogDevs" target="_blank">
-          <img src="./Images/Social-Icons/twitter.png" alt="Twitter" class="social-icons">
+          <img src="./Images/Social-Icons/twitter.png" alt="Twitter" class="social-icons" style="height: 85px; width: 80px;">
+        </a>
+        <a href="https://discord.com/invite/GUqhjBPVJ2" target="_blank">
+          <img src="./Images/Social-Icons/discord.png" alt="Discord" class="social-icons" style="height: 70px; width: 87px;">
         </a>
         <a href="https://store.steampowered.com/developer/SleepyDogStudios" target="_blank">
           <img src="./Images/Social-Icons/steam.png" alt="Steam" class="social-icons">
         </a>
         <a href="https://sidequestvr.com/app/9102/the-obsessive-shadow" target="_blank">
-          <img src="./Images/Social-Icons/SideQuest-Mark-Black.png" alt="SideQuest" class="social-icons">
+          <img src="./Images/Social-Icons/SideQuest-Mark-Black.png" alt="SideQuest" class="social-icons" style="height: 80px; width: 90px;">
         </a>
-        <a href="https://twitter.com/SleepyDogDevs" target="_blank">
-          <img src="./Images/Social-Icons/Oculus_VR.svg" alt="Oculus AppLab" class="social-icons">
+        <a target="_blank" onclick="alert('The Official AppLab version of The Obsessive Shadow is coming soon! ~Sleepy Dog Studios');">
+          <img src="./Images/Social-Icons/MetaQuest.svg" alt="Oculus AppLab" class="social-icons" style="height: 80px; width: 95px;">
         </a>
 
       </div>
       <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p> -->
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="./Images/sleepydogdevlogo.jpeg" alt="gradient-logo" width="300" height="300" style="margin-top: 10px; margin-bottom: 10px;">
+      <img class="w3-image w3-round-large" src="./Images/sleepydogdevlogo.jpeg" alt="gradient-logo" width="500" height="500" style="margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 20px;">
     </div>
   </div>
 </div>
@@ -168,14 +190,14 @@ body, html {
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones behind this studio</p>
+  <p class="w3-center w3-large">The ones behind the studio:</p>
     <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
         <img src="./Images/expopfp.png" alt="expo" style="width:100%">
         <div class="w3-container">
             <h3>Pablo</h3>
             <p class="w3-opacity">Co-Founder and Game Director</p>
-            <p>Pablo started Sleepy Dog Studios along with Lane. He has made many games in the past ranging from Team Jumpers 2 to fan-made horror games!</p>
+            <p>Pablo started Sleepy Dog Studios along with Lane. He has made many games in the past ranging from <a href="https://store.steampowered.com/app/1481310/TeamJumpers_2_New_Reality/" class="profile-links" target="_blank">Team Jumpers 2: New Reality</a> to fan-made horror games!</p>
             <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:expogamer5000@gmail.com';"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
         </div>
@@ -197,7 +219,7 @@ body, html {
         <div class="w3-container">
             <h3>Dylan</h3>
             <p class="w3-opacity">Lead Programmer and Developer</p>
-            <p>Dylan is a programmer and developer working for Sleepy Dog Studios. He has made games ranging from Untitled Mini Game to Gorilla Clicker.</p>
+            <p>Dylan is a programmer and developer working for Sleepy Dog Studios. He has made many games including <a href="https://dylandevs.itch.io/untitled-mini-game" class="profile-links" target="_blank">Untitled Mini Game</a>!</p>
             <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://www.dylanravel.com/about';"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
         </div>
@@ -208,7 +230,7 @@ body, html {
         <div class="w3-container">
             <h3>Mojoe</h3>
             <p class="w3-opacity">Programmer and Developer</p>
-            <p>Mojoe is a programmer at Sleepy Dog Studios and has made many games including Absolutely Hilarious Cat Game.</p>
+            <p>Mojoe is a programmer at Sleepy Dog Studios and has made many games including <a href="https://store.steampowered.com/app/1673840/The_Absolutely_Hilarious_Cat_Game/" class="profile-links" target="_blank">Absolutely Hilarious Cat Game</a>.</p>
             <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
         </div>
         </div>
@@ -227,47 +249,28 @@ body, html {
   </div>
   <div class="w3-quarter">
     <span class="w3-xxlarge">4,008+</span>
-    <br>Happy Customers
+    <br>Steam Users
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">4</span>
-    <br>States
+    <span class="w3-xxlarge">10,000+</span>
+    <br>SideQuest Wishlists
   </div>
 </div>
 
-<!-- Work Section -->
+<!-- Games Section -->
 <div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
+  <h3 class="w3-center">OUR GAMES</h3>
+  <p class="w3-center w3-large">What we've made:</p>
 
-  <div class="w3-row-padding" style="margin-top:64px">
+  <div class="w3-row-padding" style="margin-top:64px; display: flex; justify-content: center;">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <img src="./Images/Promo-Images/obsessive-shadow.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Obsessive Shadow">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
+    <!--
+      <div class="w3-col l3 m6">
+        <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      </div>
+    -->
   </div>
 </div>
 
@@ -276,11 +279,15 @@ body, html {
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+      <a href="https://store.steampowered.com/app/2074360/The_Obsessive_Shadow/?curator_clanid=43409964" target="_blank" style="text-decoration: none; font-weight: 800;">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </a>
   </div>
 </div>
 
 <!-- Skills Section -->
+
+<!--
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -305,36 +312,49 @@ body, html {
       </div>
     </div>
   </div>
-</div>
+</div>  
+-->
+
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <div style="text-align: center;">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> United States</p>
+      <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:sleepydogstudiosvr@gmail.com" style="text-decoration: underline;">SleepyDogStudiosVR@gmail.com</a></p>
+    </div>
+    
     <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+    
+    <!-- STILL GETTING THE FORM SET UP!! :)
+    <form method="post" action="https://sleepydogstudiosnet-contact.000webhostapp.com/contact-form-handler.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="firstName" maxlength="300"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Last Initial" required name="lastInitial" maxlength="3"></p>
+      <p><input class="w3-input w3-border" type="email" placeholder="email" required name="email" maxlength="320"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject" maxlength="60"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="message"></p>
       <p>
         <button class="w3-button w3-black" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </form>      
+    -->
+
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <!--
+      <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    -->
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
+  <!--
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -342,7 +362,8 @@ body, html {
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+  </div>    
+  -->
   <p>Copyright © 2023 Sleepy Dog Studios. All rights reserved.</p>
 </footer>
  
