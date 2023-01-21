@@ -1,25 +1,24 @@
 <?php
-    $firstName = $_POST['firstName'];
-    $lastInitial = $_POST['lastInitial'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+// Get data from form
+$first = $_POST['firstName'];
+$last = $_POST['lastInitial']
+$email= $_POST['email'];
+$subject = $_POST['subject'];
+$message= $_POST['message'];
 
-    $email_from = $email;
+$to = "sleepydogstudiosvr@gmail.com";
 
-    $email_subject = $subject;
 
-    $email_body = "Name: $firstName $lastInitial\n".
-                    "Email: $email\n\n".
-                        "Message: $message\n";
 
-    $to = "sleepydogstudiosvr@gmail.com";
+$txt = "Name: ". $first . " " . $last . "\r\n Email: "
+	. $email . "\r\n Message: " . $message;
 
-    $headers = "From: $email \r\n";
+$headers = "From: " . $email;
 
-    $headers .= "Reply-To: $email \r\n";
+if($email != NULL) {
+	mail($to, $subject, $txt, $headers);
+}
 
-    mail($to, $email_subject,$email_body,$headers);
-
-    header("Location: index.html");
+// Redirect to
+header("Location:last.html");
 ?>
