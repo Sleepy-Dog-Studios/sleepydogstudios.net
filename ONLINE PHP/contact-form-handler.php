@@ -20,5 +20,5 @@ if($email != NULL) {
 }
 
 // Redirect to
-header("Location:https://wwww.sleepydogstudios.net");
+header("Location:https://www.sleepydogstudios.net");
 ?>
