@@ -10,6 +10,7 @@
 
     gtag('config', 'G-3SL49X42ZM');
   </script>
+  <script src="https://kit.fontawesome.com/5792883fb8.js" crossorigin="anonymous"></script>
   <title>Sleepy Dog Studios</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,6 +69,10 @@
     cursor: pointer;
   }
 
+  .profile-card {
+    border-radius: 10px;
+  }
+
   </style>
 </head>
 <body>
@@ -80,15 +85,15 @@
     </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#game" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> GAMES</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#about" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-info-circle"></i> ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#game" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" style="padding-bottom: 10px;"></i>
     </a>
   </div>
 </div>
@@ -114,17 +119,14 @@
     <a href="https://www.twitter.com/sleepydogdevs" target="_blank" style="text-decoration: none;">
         <i class="fa fa-twitter w3-hover-opacity"></i>
     </a>
+    <a href="https://discord.com/invite/GUqhjBPVJ2" target="_blank" style="text-decoration: none;">
+      <i class="fa-brands fa-discord w3-hover-opacity"></i>
+  </a>
     <a href="https://store.steampowered.com/developer/SleepyDogStudios" target="_blank" style="text-decoration: none;">
       <i class="fa fa-steam w3-hover-opacity"></i>
     </a>
     <a href="https://github.com/Sleepy-Dog-Studios" target="_blank" style="text-decoration: none;">
       <i class="fa fa-github w3-hover-opacity"></i>
-    </a>
-    <a href="https://open.spotify.com/artist/0n73zonPHYxc2AIqOTp0l7?si=KuDdmytkSqCJUp211_XXNw" target="_blank" style="text-decoration: none;">
-      <i class="fa fa-spotify w3-hover-opacity"></i>
-    </a>
-    <a href="https://www.youtube.com/@expodev" target="_blank" style="text-decoration: none;">
-      <i class="fa fa-youtube w3-hover-opacity"></i>
     </a>
     <!--
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -208,47 +210,97 @@
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones behind the studio:</p>
     <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-        <img src="./Images/expopfp.png" alt="expo" style="width:100%">
-        <div class="w3-container">
-            <h3>Pablo</h3>
-            <p class="w3-opacity">Co-Founder and Game Director</p>
-            <p>Pablo co-founded Sleepy Dog Studios. He has made many games in the past such as <a href="https://store.steampowered.com/app/1481310/TeamJumpers_2_New_Reality/" class="profile-links" target="_blank">TeamJumpers 2: New Reality</a> and Horror Fangames. He also runs a <a href="https://www.youtube.com/@expodev" class="profile-links" target="_blank">YouTube Channel</a> Posting his <a href="https://open.spotify.com/artist/0n73zonPHYxc2AIqOTp0l7?si=YL3l_WmySyKDLREUp4WdMA" class="profile-links" target="_blank">music</a> and Game Development Endeavors!</p>
-            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:expogamer5000@gmail.com';"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
+        <div class="w3-card profile-card">
+          <img src="./Images/expopfp.png" class="profile-card" alt="expo" style="width:100%; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+            <div class="w3-container">
+                <h3>Pablo</h3>
+                <p class="w3-opacity">Co-Founder and Game Director</p>
+                <p>Pablo co-founded Sleepy Dog Studios. He has made many games in the past such as <a href="https://store.steampowered.com/app/1481310/TeamJumpers_2_New_Reality/" class="profile-links" target="_blank">TeamJumpers 2: New Reality</a> and Horror Fangames. He also runs a <a href="https://www.youtube.com/@expodev" class="profile-links" target="_blank">YouTube Channel</a> Posting his <a href="https://open.spotify.com/artist/0n73zonPHYxc2AIqOTp0l7?si=YL3l_WmySyKDLREUp4WdMA" class="profile-links" target="_blank">music</a> and Game Development Endeavors!</p>
+                  <div class="w3-text-grey w3-large" style="display:block; padding-right: 10px;">
+                    <a href="https://expodev.dev/" target="_blank" style="text-decoration: none;">
+                      <i class="fa-solid fa-globe w3-hover-opacity"></i>
+                  </a>
+                    <a href="https://instagram.com/expodevig/" target="_blank" style="text-decoration: none;">
+                        <i class="fa fa-instagram w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://twitter.com/expodevsequel/" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-twitter w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://youtube.com/@expodev/" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-youtube-play w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://open.spotify.com/artist/0n73zonPHYxc2AIqOTp0l7?si=KuDdmytkSqCJUp211_XXNw" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-spotify w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://store.steampowered.com/app/1481310/TeamJumpers_2_New_Reality/" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-steam w3-hover-opacity"></i>
+                  </a>
+                  </div>
+                <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:expogamer5000@gmail.com';"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
         </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-        <img src="./Images/lanepfp.png" alt="lane" style="width:100%">
-        <div class="w3-container">
-            <h3>Lane</h3>
-            <p class="w3-opacity">Co-Founder and Art Director</p>
-            <p>Lane co-founded Sleepy Dog Studios with Pablo and does all of the 3D modeling for the game!</p>
-            <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:lanetannish@gmail.com';"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
+        <div class="w3-card profile-card">
+          <img src="./Images/lanepfp.png" class="profile-card" alt="lane" style="width:100%; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+            <div class="w3-container">
+                <h3>Lane</h3>
+                <p class="w3-opacity">Co-Founder and Art Director</p>
+                <p>Lane co-founded Sleepy Dog Studios with Pablo and does all of the 3D modeling for the game!</p>
+                  <div class="w3-text-grey w3-large" style="display:block; padding-right: 10px;">
+                    <a href="https://youtube.com/@freshlemons8517/" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-youtube-play w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://steamcommunity.com/profiles/76561198168895080" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-steam w3-hover-opacity"></i>
+                    </a>
+                  </div>
+                <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:lanetannish@gmail.com';"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
         </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-        <img src="./Images/dylanpfp.png" alt="dylan" style="width:100%">
+      <div class="w3-card profile-card">
+        <img src="./Images/dylanpfp.png" class="profile-card" alt="dylan" style="width:100%; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
         <div class="w3-container">
             <h3>Dylan</h3>
             <p class="w3-opacity">Lead Programmer and Developer</p>
             <p>Dylan is a programmer and developer working for Sleepy Dog Studios. He has made many games including <a href="https://dylandevs.itch.io/untitled-mini-game" class="profile-links" target="_blank">Untitled Mini Game</a>!</p>
+              <div class="w3-text-grey w3-large" style="display:block; padding-right: 10px;">
+                <a href="https://www.dylanravel.com/" target="_blank" style="text-decoration: none;">
+                    <i class="fa-solid fa-solid fa-globe w3-hover-opacity"></i>
+                </a>
+                <a href="https://github.com/DylanDevelops/" target="_blank" style="text-decoration: none;">
+                  <i class="fa fa-github w3-hover-opacity"></i>
+                </a>
+                <a href="https://dylandevs.itch.io/" target="_blank" style="text-decoration: none;">
+                  <i class="fa-brands fab fa-itch-io w3-hover-opacity"></i>
+                </a>
+                <a href="https://www.twitter.com/dylandev_/" target="_blank" style="text-decoration: none;">
+                  <i class="fa fa-twitter w3-hover-opacity"></i>
+                </a>
+              </div>
             <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://www.dylanravel.com/about';"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
-        </div>
+      </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-        <img src="./Images/mojoepfp.png" alt="mojoe" style="width:100%">
-        <div class="w3-container">
-            <h3>Mojoe</h3>
-            <p class="w3-opacity">Programmer and Developer</p>
-            <p>Mojoe is a programmer at Sleepy Dog Studios and has made many games including <a href="https://store.steampowered.com/app/1673840/The_Absolutely_Hilarious_Cat_Game/" class="profile-links" target="_blank">Absolutely Hilarious Cat Game</a>.</p>
-            <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-        </div>
+        <div class="w3-card profile-card">
+        <img src="./Images/mojoepfp.png" class="profile-card" alt="mojoe" style="width:100%; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+          <div class="w3-container">
+              <h3>Mojoe</h3>
+              <p class="w3-opacity">Programmer and Developer</p>
+              <p>Mojoe is a programmer at Sleepy Dog Studios and has made many games including <a href="https://store.steampowered.com/app/1673840/The_Absolutely_Hilarious_Cat_Game/" class="profile-links" target="_blank">Absolutely Hilarious Cat Game</a>.</p>
+                <div class="w3-text-grey w3-large" style="display:block; padding-right: 10px;">
+                  <a href="https://store.steampowered.com/app/1673840/The_Absolutely_Hilarious_Cat_Game/" target="_blank" style="text-decoration: none;">
+                    <i class="fa fa-steam w3-hover-opacity"></i>
+                  </a>
+                  <a href="https://youtube.com/@mojoe1878/" target="_blank" style="text-decoration: none;">
+                      <i class="fa fa-youtube-play w3-hover-opacity"></i>
+                  </a>
+                </div>
+              <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+          </div>
         </div>
     </div>
 </div>
