@@ -10,20 +10,49 @@
 
     gtag('config', 'G-3SL49X42ZM');
   </script>
+  <script src="https://kit.fontawesome.com/5792883fb8.js" crossorigin="anonymous"></script>
 
 <title>The Obsessive Shadow</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <style>
   body {
-    background-color: black;
+    background-color: rgb(2, 0, 21);
   }
+
+  .game-buttons {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .game-buttons:hover {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(158, 158, 158);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 </style>
 
 <body>
+  <div id="top"></div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
@@ -50,21 +79,99 @@
 <!-- Page content -->
 <div class="w3-content w3-padding-large w3-margin-top" id="about">
 
-  <!-- About Page -->
-  <img src="/w3images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
-  <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <!-- Play Page -->
+    <div class="w3-black w3-padding-large w3-padding-32 w3-margin-top" id="about" style="border-radius: 20px; border: 3px solid white;">
+      <h3 class="w3-center"><strong>About <em>The Obsessive Shadow</em>:</strong></h3>
+      <hr class="dashed">
+      <div>
+        <img class="center" src="./Images/TOS/about-section-images/discordos.png" />
+
+        <p class="w3-center"><a href="https://discord.com/invite/2Aa9BR2YFW" target="_blank" style="text-decoration: none;">https://discord.com/invite/2Aa9BR2YFW</a></p>
+
+        <img class="center" src="./Images/TOS/about-section-images/logo_os__2_.png" />
+
+        <p class="w3-center">The Obsessive Shadow is an Indie VR Survival horror game about fending off a home intruder that you can't exactly identify... Keep yourself safe with nothing but a flashlight and your own eyes...</p>
+
+        <img class="center" src="./Images/TOS/about-section-images/whatsthat.png" />
+
+        <p class="w3-center">You're going about your business winding down at home for the night when suddenly you see a very strange emergency broadcast come on the T.V. followed by a knock on the window...</p>
+
+        <img class="center" src="./Images/TOS/about-section-images/whosthere__1_.png" />
+
+        <p class="w3-center">Watch your windows, something is close by and watching you...</p>
+
+        <img class="center" src="./Images/TOS/about-section-images/gotcha__1_.png" />
+
+        <p class="w3-center">your flashlight is your best friend</p>
+
+        <img class="center" src="./Images/TOS/about-section-images/poweroff__1_.png" />
+
+        <p class="w3-center">Keep things quiet to avoid angering him...</p>
+
+        <img class="center" src="./Images/TOS/about-section-images/show.png" />
+
+        <p class="w3-center">Check under the bed, something is reaching for you!</p>
+        </b>
+      </div>
+      <hr class="dashed">
+    </div>
 
   <!-- Play Page -->
-  <div class="w3-black w3-padding-large w3-padding-32 w3-margin-top" id="play">
-    <h3 class="w3-center">How to Play</h3>
-    <h4 class="">Steam:</h3>
-    <iframe src="https://store.steampowered.com/widget/2074360/" frameborder="0" width="646" height="190" class="w3-center"></iframe>
-    <p>The Obsessive Shadow is on Steam! You can wishlist the full game and if you would like, play the demo which is out now!</p>
-
+  <div class="w3-black w3-padding-large w3-padding-32 w3-margin-top" id="play" style="border-radius: 20px; border: 3px solid white;">
+    <h3 class="w3-center"><strong>Where to Play:</strong></h3>
+    <hr class="dashed">
+    <div>
+      <h4 class="steam-title"><a href="https://store.steampowered.com/app/2074360/The_Obsessive_Shadow/" target="_blank" style="text-decoration: none;"><strong>Steam:</strong></a></h3>
+        <p>The Obsessive Shadow currently has a demo and it's out on steam! Feel free to play it and make sure to wishlist the game as the full game will be coming out soon!</p>
+        <div class="wrap">
+          <iframe id="scaled-frame" src="https://store.steampowered.com/widget/2074360/" frameborder="0" width="646" height="190" class="w3-center"></iframe>
+        </div>
+        <br>
+        <div class="wrap">
+          <a href="https://store.steampowered.com/app/2074360/The_Obsessive_Shadow/" target="_blank" style="text-decoration: none;"><button class="game-buttons" type="button">Play on Steam</button></a>
+        </div>
+    </div>
+    <hr class="dashed">
+    <div>
+      <h4 class="sidequest-title"><a href="https://sidequestvr.com/app/9102/the-obsessive-shadow" target="_blank" style="text-decoration: none;"><strong>SideQuest:</strong></a></h3>
+        <p>The Obsessive Shadow's Demo is on SideQuest! Try it out by clicking the button above!</p>
+        <div class="wrap">
+          <a href="https://sidequestvr.com/app/9102/the-obsessive-shadow" target="_blank" style="text-decoration: none;"><button class="game-buttons" type="button">Play on SideQuest</button></a>
+        </div>
+    </div>
+    <hr class="dashed">
+    <div>
+      <h4 class="applab-title"><a onclick="alert('AppLab version will be updated here as soon as the AppLab version is approved by Meta.')" target="_blank" style="text-decoration: none; cursor: pointer;"><strong>AppLab:</strong></a></h3>
+        <p>The AppLab version is not currently available but will be updated here as soon as it is!</p>
+        <div class="wrap">
+          <a onclick="alert('AppLab version will be updated here as soon as the AppLab version is approved by Meta.')" target="_blank" style="text-decoration: none;"><button class="game-buttons" type="button">Play on AppLab</button></a>
+        </div>
+    </div>
+    <hr class="dashed">
   </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://store.steampowered.com/developer/SleepyDogStudios/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-steam w3-hover-opacity"></i>
+    </a>
+    <a href="https://discord.com/invite/GUqhjBPVJ2/" target="_blank" style="text-decoration: none;">
+      <i class="fa fab fa-discord w3-hover-opacity"></i>
+    </a>
+    <a href="https://twitter.com/SleepyDogDevs/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://github.com/Sleepy-Dog-Studios/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-github w3-hover-opacity"></i>
+    </a>
+    <a href="https://sleepydogstudios.net/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-solid fa-globe w3-hover-opacity"></i>
+    </a>
+  </div>    
+  <p>Copyright © 2023 Sleepy Dog Studios. <a href="./privacy-policy">All rights reserved</a>.</p>
+</footer>
 
 <!-- End page content -->
 </div>
