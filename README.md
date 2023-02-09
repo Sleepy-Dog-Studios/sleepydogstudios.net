@@ -2,7 +2,7 @@
 [![pages-build-deployment](https://github.com/Sleepy-Dog-Studios/sleepydogstudios.net/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Sleepy-Dog-Studios/sleepydogstudios.net/actions/workflows/pages/pages-build-deployment)
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/48571264/215572440-85489a6c-fe3c-410b-baaa-6d264d5abb3a.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: 75%;">
+  <img src="https://user-images.githubusercontent.com/48571264/215572440-85489a6c-fe3c-410b-baaa-6d264d5abb3a.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: 75%; border-radius: 25px;">
 </p>
 
 # sleepydogstudios.net
