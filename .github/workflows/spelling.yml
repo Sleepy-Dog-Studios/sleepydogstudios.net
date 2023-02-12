@@ -49,6 +49,7 @@ jobs:
     name: spell checking
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
+...
   spelling:
     name: Check Spelling
     permissions:
