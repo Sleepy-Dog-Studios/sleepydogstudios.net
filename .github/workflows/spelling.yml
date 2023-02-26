@@ -115,3 +115,10 @@ jobs:
         experimental_apply_changes_via_bot: 1
         checkout: true
         ssh_key: "${{ secrets.CHECK_SPELLING }}"
+        extra_dictionaries:
+          cspell:software-terms/src/software-terms.txt
+          cspell:html/html.txt
+          cspell:filetypes/filetypes.txt
+          cspell:css/css.txt
+          cspell:npm/npm.txt
+          cspell:lorem-ipsum/dictionary.txt
