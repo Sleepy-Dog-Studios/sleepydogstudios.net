@@ -448,7 +448,7 @@
     <div style="text-align: center;">
       <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
 
-      <form method="POST" action="https://formspree.io/f/mgebzwjv">
+      <form method="POST" action="https://formspree.io/f/mgebzwjv" class="contactForm">
         <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="firstName" maxlength="300"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Last Initial" required name="lastInitial" maxlength="3"></p>
         <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="email" maxlength="320"></p>
@@ -465,6 +465,44 @@
           </button>
         </p>
       </form>     
+
+      <script>
+        // Get the submit button element
+        var submitButton = document.querySelector("button[type=submit]");
+        var contactForm = document.querySelector(".contactForm");
+
+        // add the event listener to the submit button
+        submitButton.addEventListener('click', function(event) {
+          event.preventDefault(); // prevents default form submission
+
+          // get the values of the form inputs
+          var firstName = document.querySelector("input[name=firstName]").value;
+          var lastInitial = document.querySelector("input[name=lastInitial]").value;
+          var email = document.querySelector("input[name=email]").value;
+          var subject = document.querySelector("input[name=subject]").value;
+          var message = document.querySelector("input[name=message]").value;
+
+          // checks if all inputs are filled out
+          if(firstName !== '' && lastInitial !== '' && email !== '' && subject !== '' && message !== '') {
+            // checks if the captcha was successful
+            var recaptchaResponse = grecaptcha.getResponse();
+            if(recaptchaResponse !== '') {
+              // if all inputs are filled out, submit the form
+              contactForm.submit();
+            } else {
+              // alert the viewer they need to complete the captcha
+              alert("Please complete the reCAPTCHA before submitting again.");
+            }
+          } else {
+            // alert the viewer they need to fill out all fields
+            alert("Please fill out all fields before submitting again.");
+          }
+
+          // checks if the captcha was successful
+          var recaptchaResponse = grecaptcha.getResponse();
+        })
+      </script>
+
       <!--
         <br>
         <p style="font-size: 15px;">OR</p>   
