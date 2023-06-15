@@ -1,10 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="refresh" content="0; URL=https://github.com/Sleepy-Dog-Studios/Bug-Reports/issues/new/choose/" />
-    <title>Report A Bug</title>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SL49X42ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3SL49X42ZM');
+  </script>
+  <script src="https://kit.fontawesome.com/5792883fb8.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <meta property="og:title" content="Sleepy Dog Studios"/>
+  <meta property="og:image" content="https://i.ibb.co/zPmzdVK/Sleepy-Dog-Studios-Social-Image.jpg"/>
+  <meta property="og:description" content="Welcome to the official Sleepy Dog Studios website! Here you can find information from the creators of The Obsessive Shadow, OliVR and so much more!"/>
+  <meta property="og:url" content="https://www.sleepydogstudios.net"/>
+  <meta property='og:image:width' content='1024' />
+  <meta property='og:image:height' content='1024' />
+  <meta property="og:type" content='website'/>
+  <meta name="keywords" content="Sleepy Dog Studios, TOS, The Obsessive Shadow, ExpoDev, DylanDev, MojoeMadness, Laneboi, Oculus, Games, Game development">
+
+  <title>Sleepy Dog Studios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./Images/sleepydogstudios_favicon_stuff/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/sleepydogstudios_favicon_stuff/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Images/sleepydogstudios_favicon_stuff/favicon-16x16.png">
+  <link rel="manifest" href="./Images/sleepydogstudios_favicon_stuff/site.webmanifest">
+
+  <style>
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./Images/background-with-dog.png");
+    min-height: 100%;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+
+  .about-icons {
+    height: 64px;
+    width: 64px;
+  }
+
+  .social-icons {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+  }
+
+  .social-icons:hover {
+    cursor: pointer;
+    filter: invert(10%);
+    zoom: 110%;
+  }
+
+  .profile-links {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+
+  .profile-links:hover {
+    text-decoration: underline;
+  }
+
+  .promo-image:hover {
+    cursor: pointer;
+  }
+
+  .profile-card {
+    border-radius: 10px;
+  }
+
+  .easter-egg {
+    width: 1px;
+    height: 1px;
+  }
+
+  </style>
 </head>
 <body>
-    <h1>If you are not redirected within 3 seconds, click <a href="https://github.com/Sleepy-Dog-Studios/Bug-Reports/issues/new/choose">here</a>.</h1>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="justify-content: center; display: flex; align-items: center;">
+      <img src="./Images/sleepydogdevlogo.jpeg" style="width: 30px; height: 30px; border-radius: 20px; margin-right: 10px;">SLEEPY DOG STUDIOS
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-info-circle"></i> ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#games" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-gamepad"></i> GAMES</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://news.sleepydogstudios.net" target="_blank" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-solid fa-newspaper-o"></i> NEWS</a>
+      <a href="./report" target="_blank" class="w3-bar-item w3-button" style="padding-bottom: 19px;"><i class="fa fa-solid fa-bug"></i> REPORT A BUG</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars" style="padding-bottom: 10px;"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#games" onclick="w3_close()" class="w3-bar-item w3-button">GAMES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="https://news.sleepydogstudios.net" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
+  <a href="./report" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">REPORT A BUG</a>
+</nav>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:30px">
+    <div style="text-align: center;">
+      <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+
+      <form method="POST" action="https://formspree.io/f/mgebzwjv" class="contactForm">
+        <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="firstName" maxlength="300"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Last Initial" required name="lastInitial" maxlength="3"></p>
+        <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="email" maxlength="320"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject" maxlength="60"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="message"></p>
+
+        <!-- Add this back once I figure out how to make a recaptcha trigger something -->
+        <!-- <div class="g-recaptcha" data-sitekey="6Ld52OUkAAAAAEiigKYxGmDKax0xoZXUjl8sRCyq"></div> -->
+
+        <p class="w3-center">
+          <div class="g-recaptcha" data-sitekey="6Ld52OUkAAAAAEiigKYxGmDKax0xoZXUjl8sRCyq"></div> <!-- replace with your recaptcha SITE key not secret key -->
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>     
+
+      <script>
+        // Get the submit button element
+        var submitButton = document.querySelector("button[type=submit]");
+        var contactForm = document.querySelector(".contactForm");
+
+        // add the event listener to the submit button
+        submitButton.addEventListener('click', function(event) {
+          event.preventDefault(); // prevents default form submission
+
+          // get the values of the form inputs
+          var firstName = document.querySelector("input[name=firstName]").value;
+          var lastInitial = document.querySelector("input[name=lastInitial]").value;
+          var email = document.querySelector("input[name=email]").value;
+          var subject = document.querySelector("input[name=subject]").value;
+          var message = document.querySelector("input[name=message]").value;
+
+          // checks if all inputs are filled out
+          if(firstName !== '' && lastInitial !== '' && email !== '' && subject !== '' && message !== '') {
+            // checks if the captcha was successful
+            var recaptchaResponse = grecaptcha.getResponse();
+            if(recaptchaResponse !== '') {
+              // if all inputs are filled out, submit the form
+              contactForm.submit();
+            } else {
+              // alert the viewer they need to complete the captcha
+              alert("Please complete the reCAPTCHA before submitting again.");
+            }
+          } else {
+            // alert the viewer they need to fill out all fields
+            alert("Please fill out all fields before submitting again.");
+          }
+
+          // checks if the captcha was successful
+          var recaptchaResponse = grecaptcha.getResponse();
+        })
+      </script>
+
+      <!--
+        <br>
+        <p style="font-size: 15px;">OR</p>   
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:sleepydogstudiosvr@gmail.com" style="text-decoration: underline;">sleepydogstudiosvr@gmail.com</a></p>
+      -->
+    </div>
+    
+    <!-- <p class="w3-center" style="font-size: large;"><em>CONTACT FORM COMING SOON</em></p> -->
+
+  
+
+
+    <!-- Image of location/map -->
+    <!--
+      <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://store.steampowered.com/developer/SleepyDogStudios/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-steam w3-hover-opacity"></i>
+    </a>
+    <a href="https://discord.com/invite/GUqhjBPVJ2/" target="_blank" style="text-decoration: none;">
+      <i class="fa fab fa-discord w3-hover-opacity"></i>
+    </a>
+    <a href="https://twitter.com/SleepyDogDevs/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://github.com/Sleepy-Dog-Studios/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-github w3-hover-opacity"></i>
+    </a>
+    <a href="https://sleepydogstudios.net/" target="_blank" style="text-decoration: none;">
+      <i class="fa fa-solid fa-globe w3-hover-opacity"></i>
+    </a>
+  </div>    
+  <p>Copyright © 2023 Sleepy Dog Studios. <a href="./privacy-policy">All rights reserved</a>.</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
 </body>
 </html>
