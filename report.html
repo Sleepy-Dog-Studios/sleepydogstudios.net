@@ -139,26 +139,47 @@
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:30px">
+  <h3 class="w3-center">REPORT A BUG</h3>
+  <p class="w3-center w3-large">By sending a bug report in, we are able to gather your feedback and make our game better! Thank you!</p>
+  <div style="margin-top:30px;">
     <div style="text-align: center;">
       <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
 
-      <form method="POST" action="https://formspree.io/f/mgebzwjv" class="contactForm">
-        <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="firstName" maxlength="300"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Last Initial" required name="lastInitial" maxlength="3"></p>
-        <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="email" maxlength="320"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject" maxlength="60"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="message"></p>
+      <form method="POST" action="https://formspree.io/f/mrgvnknq" class="contactForm" enctype="multipart/form-data">
+        <label for="firstname" class="w3-large w3-left" style="font-weight: bold;">First Name: <span style="color: red; font-size: 25px">*</span></label>
+        <p><input class="w3-input w3-border" type="text" placeholder="John" required name="firstName" maxlength="300"></p>
 
-        <!-- Add this back once I figure out how to make a recaptcha trigger something -->
-        <!-- <div class="g-recaptcha" data-sitekey="6Ld52OUkAAAAAEiigKYxGmDKax0xoZXUjl8sRCyq"></div> -->
+        <label for="lastInitial" class="w3-large w3-left" style="font-weight: bold;">Last Initial: <span style="color: red; font-size: 25px">*</span></label>
+        <p><input class="w3-input w3-border" type="text" placeholder="D" required name="lastInitial" maxlength="3"></p>
+
+        <label for="email" class="w3-large w3-left" style="font-weight: bold;">Email: <span style="color: red; font-size: 25px">*</span></label>
+        <p><input class="w3-input w3-border" type="email" placeholder="example@example.com" required name="email" maxlength="320"></p>
+
+        <label for="service" class="w3-large w3-left" style="font-weight: bold;">What are you reporting a bug for? <span style="color: red; font-size: 25px">*</span></label>
+        <select class="w3-select w3-border" required name="service">
+          <option value="" disabled selected>Choose a service</option>
+          <option value="The Obsessive Shadow - Steam Version">The Obsessive Shadow - Steam Version</option>
+          <option value="The Obsessive Shadow - AppLab Version">The Obsessive Shadow - AppLab Version</option>
+          <option value="Sleepy Dog Studios Website">Sleepy Dog Studios Website</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="title" class="w3-large w3-left" style="font-weight: bold;">Title: <span style="color: red; font-size: 25px">*</span></label>
+        <p><input class="w3-input w3-border" type="text" placeholder="The Game is Too Hard" required name="title" maxlength="60"></p>
+
+        <label for="message" class="w3-large w3-left" style="font-weight: bold;">Describe what is happening in as much detail as possible: <span style="color: red; font-size: 25px">*</span></label>
+        <p><input class="w3-input w3-border" type="text" placeholder="The game is way too hard and I can't win..." required name="message"></p>
+
+        <label for="playerLog" class="w3-large w3-left" style="font-weight: bold;">Upload your Player Log to help us diagnose the issue: <span style="color: gray">[C:\Users\&lt;USER NAME&gt;\AppData\LocalLow\Sleepy Dog Studios\&lt;GAME NAME&gt;\Player.log]</span> <em style="font-weight: normal;">(Optional)</em></label>
+        <p><input class="w3-border" type="file" name="playerLog" accept=".log, .txt"></p>
+
+        <label for="screenshot" class="w3-large w3-left" style="font-weight: bold;">Upload a screenshot to help us diagnose the issue: <em style="font-weight: normal;">(Optional)</em></label>
+        <p><input class="w3-border" type="file" name="screenshot" accept="image"></p>
 
         <p class="w3-center">
           <div class="g-recaptcha" data-sitekey="6Ld52OUkAAAAAEiigKYxGmDKax0xoZXUjl8sRCyq"></div> <!-- replace with your recaptcha SITE key not secret key -->
           <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            <i class="fa fa-paper-plane"></i> SUBMIT REPORT
           </button>
         </p>
       </form>     
@@ -176,7 +197,8 @@
           var firstName = document.querySelector("input[name=firstName]").value;
           var lastInitial = document.querySelector("input[name=lastInitial]").value;
           var email = document.querySelector("input[name=email]").value;
-          var subject = document.querySelector("input[name=subject]").value;
+          var service = document.querySelector("select[name=service]").value;
+          var title = document.querySelector("input[name=title]").value;
           var message = document.querySelector("input[name=message]").value;
 
           // checks if all inputs are filled out
