@@ -106,7 +106,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide" style="justify-content: center; display: flex; align-items: center;">
+    <a href="./#home" class="w3-bar-item w3-button w3-wide" style="justify-content: center; display: flex; align-items: center;">
       <img src="./Images/sleepydogdevlogo.jpeg" style="width: 30px; height: 30px; border-radius: 20px; margin-right: 10px;">SLEEPY DOG STUDIOS
     </a>
     <!-- Right-sided navbar links -->
@@ -169,12 +169,14 @@
 
         <label for="message" class="w3-large w3-left" style="font-weight: bold;">Describe what is happening in as much detail as possible: <span style="color: red; font-size: 25px">*</span></label>
         <p><input class="w3-input w3-border" type="text" placeholder="The game is way too hard and I can't win..." required name="message"></p>
+        
+        <!--
+          <label for="playerLog" class="w3-large w3-left" style="font-weight: bold;">Upload your Player Log to help us diagnose the issue: <span style="color: gray">[C:\Users\&lt;USER NAME&gt;\AppData\LocalLow\Sleepy Dog Studios\&lt;GAME NAME&gt;\Player.log]</span> <em style="font-weight: normal;">(Optional)</em></label>
+          <p><input class="w3-border" type="file" name="playerLog" accept=".log, .txt"></p>
 
-        <label for="playerLog" class="w3-large w3-left" style="font-weight: bold;">Upload your Player Log to help us diagnose the issue: <span style="color: gray">[C:\Users\&lt;USER NAME&gt;\AppData\LocalLow\Sleepy Dog Studios\&lt;GAME NAME&gt;\Player.log]</span> <em style="font-weight: normal;">(Optional)</em></label>
-        <p><input class="w3-border" type="file" name="playerLog" accept=".log, .txt"></p>
-
-        <label for="screenshot" class="w3-large w3-left" style="font-weight: bold;">Upload a screenshot to help us diagnose the issue: <em style="font-weight: normal;">(Optional)</em></label>
-        <p><input class="w3-border" type="file" name="screenshot" accept="image"></p>
+          <label for="screenshot" class="w3-large w3-left" style="font-weight: bold;">Upload a screenshot to help us diagnose the issue: <em style="font-weight: normal;">(Optional)</em></label>
+          <p><input class="w3-border" type="file" name="screenshot" accept="image"></p>
+        -->
 
         <p class="w3-center">
           <div class="g-recaptcha" data-sitekey="6Ld52OUkAAAAAEiigKYxGmDKax0xoZXUjl8sRCyq"></div> <!-- replace with your recaptcha SITE key not secret key -->
