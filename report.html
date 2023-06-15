@@ -145,7 +145,7 @@
     <div style="text-align: center;">
       <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
 
-      <form method="POST" action="https://formspree.io/f/mrgvnknq" class="contactForm" enctype="multipart/form-data">
+      <form method="POST" action="https://formspree.io/f/mrgvnknq" class="bugReportForm" enctype="multipart/form-data">
         <label for="firstname" class="w3-large w3-left" style="font-weight: bold;">First Name: <span style="color: red; font-size: 25px">*</span></label>
         <p><input class="w3-input w3-border" type="text" placeholder="John" required name="firstName" maxlength="300"></p>
 
@@ -187,7 +187,7 @@
       <script>
         // Get the submit button element
         var submitButton = document.querySelector("button[type=submit]");
-        var contactForm = document.querySelector(".contactForm");
+        var contactForm = document.querySelector(".bugReportForm");
 
         // add the event listener to the submit button
         submitButton.addEventListener('click', function(event) {
@@ -202,7 +202,7 @@
           var message = document.querySelector("input[name=message]").value;
 
           // checks if all inputs are filled out
-          if(firstName !== '' && lastInitial !== '' && email !== '' && subject !== '' && message !== '') {
+          if(firstName !== '' && lastInitial !== '' && email !== '' && service !== '' && title !== '' && message !== '') {
             // checks if the captcha was successful
             var recaptchaResponse = grecaptcha.getResponse();
             if(recaptchaResponse !== '') {
