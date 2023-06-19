@@ -99,6 +99,41 @@
     height: 1px;
   }
 
+  .modal {
+    position: fixed;
+    width: 500px;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    z-index: 1;
+    border-top-right-radius: 10px;
+  }
+
+  .cookies-text {
+    margin-left: 10px
+  }  
+  
+  .x-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .x-button:hover {
+    cursor: pointer;
+  }
+
+  .cookies-text, .x-button {
+    display: inline-block;
+    opacity: 1;
+  }
+
   </style>
 </head>
 <body>
@@ -136,6 +171,19 @@
   <a href="https://news.sleepydogstudios.net" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
   <a href="./report" onclick="w3_close()" class="w3-bar-item w3-button">REPORT A BUG</a>
 </nav>
+
+<!-- Cookies popup -->
+<div class="modal">
+  <p class="cookies-text">This website uses cookies to ensure you get the best experience.</p>
+  <a class="x-button" onclick="CloseCookiesPopup()" style="text-decoration: none;">
+    <i class="fa fa-close w3-hover-opacity"></i>
+  </a>
+</div>
+<script>
+  function CloseCookiesPopup() {
+    document.getElementsByClassName("modal")[0].style.display = "none";
+  }
+</script>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -380,7 +428,7 @@
     <br>Project In The Works
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">18,500+</span>
+    <span class="w3-xxlarge">18,500+</span> <!-- These stats are updated periodically -->
     <br>Downloads
   </div>
   <div class="w3-quarter">
